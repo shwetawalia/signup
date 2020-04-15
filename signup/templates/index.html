@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<h1>HY!User
+	<br>welcome</br></h1>
+{%if 'username' in request.session%}
+<h1>hy {{request.session.username}}</h1>
+<a href="{% url 'n3'%}">logout</a>
+<img src="{{un.img.url}}">
+{% endif %}
+</body>
+</html>
